@@ -1,0 +1,8 @@
+Le diagramme de séquence montre le fonctionnement du main
+En premier un objet ChargeurMagasin est crée, ensuite la méthode chargerMagasin permet de charger les fichiers XML
+dans le magasin.
+Cela créer un objet Magasin, puis charge les CD du magasin en utilisant un ChargeurCD, et en utilisant ensuite charger
+qui permet de charger chaque CD dans le magasin avec ceux qui le compose.
+Chaque piste des CD est extraite, et est ajoutée par la suite au cd.
+Ensuite le CD est ajouter au magasin.
+La méthode chargerMagasin finis ensuite.
