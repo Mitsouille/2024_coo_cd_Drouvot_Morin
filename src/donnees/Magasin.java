@@ -85,6 +85,12 @@ public class Magasin {
     }
 
     public void trierArtiste() {
+        ArrayList<CD> artisteTrier = new ArrayList<CD>();
+        int caseEnCours = 0;
+        for(int i = 0; i < listeCds.size(); i++){
+            if(listeCds.get(caseEnCours).getNomArtiste().compareToIgnoreCase(listeCds.get(i).getNomArtiste()) > 0){
 
+            }
+        }
     }
 }

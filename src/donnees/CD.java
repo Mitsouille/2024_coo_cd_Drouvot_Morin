@@ -104,4 +104,6 @@ public class CD {
 	public String getNomCD() {
 		return nomCD;
 	}
+
+	public String getNomArtiste(){return nomArtiste;}
 }
