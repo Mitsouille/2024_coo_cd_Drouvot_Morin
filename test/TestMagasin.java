@@ -10,7 +10,7 @@ public class TestMagasin {
     public void test_chargerMagasin(){
         boolean exception = false;
         try{
-            ChargeurMagasin cm = new ChargeurMagasin("./src/musicbrainzSimple/");
+            ChargeurMagasin cm = new ChargeurMagasin("./src/musicbrainzSimple");
             cm.chargerMagasin();
         }catch (FileNotFoundException e){
             exception = true;
