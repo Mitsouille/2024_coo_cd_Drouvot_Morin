@@ -86,12 +86,19 @@ public class Magasin {
     }
 
     public void trierArtiste() {
-        ArrayList<CD> artisteTrier = new ArrayList<CD>();
-        int caseEnCours = 0;
-        for(int i = 0; i < listeCds.size(); i++){
-            if(listeCds.get(caseEnCours).getNomArtiste().compareToIgnoreCase(listeCds.get(i).getNomArtiste()) > 0){
-
+        ArrayList<CD> listVide = new ArrayList<CD>();
+        int taille = listeCds.size();
+        while (taille > 0){
+            CD cdMin = listeCds.getFirst();
+            for (int i = 0; i < taille; i++) {
+                CD cd = listeCds.get(i);
+                if (cd.etreAvantArtiste(cdMin.getNomArtiste()))
+                    cdMin = cd;
             }
+            listVide.add(cdMin);
+            listeCds.remove(cdMin);
+            taille--;
         }
+        listeCds = listVide;
     }
 }

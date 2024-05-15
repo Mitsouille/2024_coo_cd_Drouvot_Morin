@@ -101,15 +101,20 @@ public class CD {
 		return this.nomCD.compareToIgnoreCase(nom) < 0;
     }
 
+    /**
+     * methode etreAvantArtiste
+     * @param nom
+     * @return
+     */
+    public boolean etreAvantArtiste(String nom) {
+        return this.nomArtiste.compareToIgnoreCase(nom) < 0;
+    }
+
     public String getNomCD() {
         return nomCD;
     }
 
     public String getNomArtiste() {
         return nomArtiste;
-    }
-
-    public boolean etreAvantArtiste(String nom) {
-        return this.nomArtiste.compareToIgnoreCase(nom) < 0;
     }
 }
