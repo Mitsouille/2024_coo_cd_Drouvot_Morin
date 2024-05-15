@@ -101,4 +101,8 @@ public class Magasin {
         }
         listeCds = listVide;
     }
+
+    public ArrayList<CD> getListeCds(){
+        return this.listeCds;
+    }
 }
