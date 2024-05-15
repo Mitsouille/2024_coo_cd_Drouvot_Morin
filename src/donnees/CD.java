@@ -96,4 +96,12 @@ public class CD {
 			resultat = "0" + resultat;
 		return (resultat);
 	}
+
+	public int etreAvantAlbum(String nom) {
+		return nomCD.compareToIgnoreCase(nom);
+	}
+
+	public String getNomCD() {
+		return nomCD;
+	}
 }

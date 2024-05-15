@@ -65,12 +65,26 @@ public class Magasin {
         return (res);
     }
 
+    public void trierAlbum() {
+        int taille = listeCds.size();
+        for (int i = 0; i < taille; i++) {
+            CD cd = listeCds.get(i);
+            CD cdSelectionne = cd;
+            int indice = i;
+            for (int j = i + 1; j < taille; j++) {
+                CD cd2 = listeCds.get(j);
+                int estAvant = cd2.etreAvantAlbum(cd.getNomCD());
+                if (estAvant < 0) {
+                    indice = j;
+                    cdSelectionne = cd2;
+                }
+            }
+            listeCds.set(indice, cd);
+            listeCds.set(i, cdSelectionne);
+        }
+    }
+
     public void trierArtiste() {
 
     }
-
-    public void trierAlbum() {
-
-    }
-
 }
