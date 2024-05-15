@@ -65,6 +65,9 @@ public class Magasin {
         return (res);
     }
 
+    /**
+     * tri le magasin par album
+     */
     public void trierAlbum() {
         int taille = listeCds.size();
         for (int i = 0; i < taille; i++) {

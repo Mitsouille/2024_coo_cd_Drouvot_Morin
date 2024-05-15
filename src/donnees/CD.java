@@ -92,6 +92,11 @@ public class CD {
         return (resultat);
     }
 
+    /**
+     * methode etreAvantAlbum
+     * @param nom
+     * @return
+     */
     public boolean etreAvantAlbum(String nom) {
 		return this.nomCD.compareToIgnoreCase(nom) < 0;
     }

@@ -29,12 +29,12 @@ public class MainChargeurMagasin {
 		Scanner sc = new Scanner(System.in);
 		sc.nextLine();
 		sc.close();
-
-		System.out.println("TRI PAR ARTISTE : \n");
+		// tri par artiste
+		System.out.println("\nTRI PAR ARTISTE :\n");
 		resultat.trierArtiste();
 		System.out.println(resultat);
-
-		System.out.println("TRI PAR ALBUM : \n");
+		// tri par album
+		System.out.println("\nTRI PAR ALBUM :\n");
 		resultat.trierAlbum();
 		System.out.println(resultat);
 
