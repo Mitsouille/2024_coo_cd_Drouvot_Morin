@@ -30,9 +30,11 @@ public class MainChargeurMagasin {
 		sc.nextLine();
 		sc.close();
 
+		System.out.println("TRI PAR ARTISTE : \n");
 		resultat.trierArtiste();
 		System.out.println(resultat);
 
+		System.out.println("TRI PAR ALBUM : \n");
 		resultat.trierAlbum();
 		System.out.println(resultat);
 
