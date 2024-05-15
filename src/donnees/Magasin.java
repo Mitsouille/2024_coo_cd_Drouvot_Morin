@@ -73,8 +73,8 @@ public class Magasin {
             int indice = i;
             for (int j = i + 1; j < taille; j++) {
                 CD cd2 = listeCds.get(j);
-                int estAvant = cd2.etreAvantAlbum(cd.getNomCD());
-                if (estAvant < 0) {
+                boolean estAvant = cd2.etreAvantAlbum(cd.getNomCD());
+                if (estAvant) {
                     indice = j;
                     cdSelectionne = cd2;
                 }

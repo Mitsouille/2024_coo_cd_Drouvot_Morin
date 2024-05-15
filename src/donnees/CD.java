@@ -97,8 +97,8 @@ public class CD {
 		return (resultat);
 	}
 
-	public int etreAvantAlbum(String nom) {
-		return nomCD.compareToIgnoreCase(nom);
+	public boolean etreAvantAlbum(String nom) {
+		return nomCD.charAt(0) < nom.charAt(0);
 	}
 
 	public String getNomCD() {
