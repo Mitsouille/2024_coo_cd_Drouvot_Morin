@@ -103,4 +103,8 @@ public class CD {
     public String getNomArtiste() {
         return nomArtiste;
     }
+
+    public boolean etreAvantArtiste(String nom) {
+        return this.nomArtiste.compareToIgnoreCase(nom) < 0;
+    }
 }
