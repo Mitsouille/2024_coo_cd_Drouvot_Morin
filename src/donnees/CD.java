@@ -98,7 +98,7 @@ public class CD {
 	}
 
 	public boolean etreAvantAlbum(String nom) {
-		return nomCD.charAt(0) < nom.charAt(0);
+		return Character.compare(nomCD.charAt(0), nom.charAt(0)) < 0;
 	}
 
 	public String getNomCD() {
