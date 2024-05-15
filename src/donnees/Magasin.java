@@ -65,6 +65,12 @@ public class Magasin {
         return (res);
     }
 
-    // TODO  ajouter une methode de tri
+    public void trierArtiste() {
+
+    }
+
+    public void trierAlbum() {
+
+    }
 
 }

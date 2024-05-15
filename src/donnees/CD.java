@@ -96,6 +96,4 @@ public class CD {
 			resultat = "0" + resultat;
 		return (resultat);
 	}
-
-	// TODO 
 }
