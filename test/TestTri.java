@@ -25,7 +25,7 @@ public class TestTri {
         m.trierArtiste();
         ArrayList<CD> liste = m.getListeCds();
         assertEquals("Zebda",liste.getLast().getNomArtiste(),"Le dernier artiste doit etre Zebda");
-        assertEquals("Bénabar",liste.get(0).getNomArtiste(),"Le premier artiste doit être Bénabar");
+        assertEquals("B" + "\351" + "nabar",liste.getFirst().getNomArtiste(),"Le premier artiste doit etre Bénabar");
 
     }
     /*
@@ -37,8 +37,8 @@ public class TestTri {
         Magasin m = cm.chargerMagasin();
         m.trierAlbum();
         ArrayList<CD> liste = m.getListeCds();
-        assertEquals("Zebda",liste.getLast().getNomCD(),"Le dernier album doit etre Zebda");
-        assertEquals("Bénabar",liste.get(0).getNomCD(),"Le premier album doit être Bénabar");
+        assertEquals("Whitney Houston",liste.getLast().getNomCD(),"Le dernier album doit etre Whitney Houston");
+        assertEquals("Believe",liste.getFirst().getNomCD(),"Le premier album doit être Believe");
 
     }
 }
